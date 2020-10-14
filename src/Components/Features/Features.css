@@ -1,0 +1,94 @@
+.features {
+    position: relative;
+    max-width: 1230px;
+    width: 90%;
+    margin: auto;
+    padding: 100px 0;
+}
+
+.features-title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 140%;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+}
+
+.table {
+    margin-bottom: 100px;
+}
+
+.table-title, .features-subtitle {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 140%;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.table-column {
+    width: 300px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 179.69%;
+}
+
+.features-text {
+    max-width: 490px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 29px;
+}
+
+.rocket {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: 99;
+    max-width: 300px;
+}
+
+@media (max-width: 960px) {
+    .rocket {
+        max-width: 230px;
+    }
+
+    .table-column {
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .rocket {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .rocket {
+        position: static;
+        margin-bottom: 30px;
+    }
+
+    .table {
+        margin-bottom: 0;
+    }
+
+    .table-column {
+        font-size: 14px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .features {
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+}
