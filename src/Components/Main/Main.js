@@ -2,11 +2,12 @@ import React from "react";
 import moon from "../../video/moon.mp4";
 import './Main.css'
 
-const Main = () => {
+const Main = (props) => {
+
     return (
         <section className="main">
             <h1 className="title">
-                Falcon 1
+                {props.rocketName}
             </h1>
             <div className="video-container">
                 <video className="video" autoPlay loop muted src={moon}/>
