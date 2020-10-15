@@ -16,8 +16,22 @@ class App extends React.Component{
         rocketName: 'Falcon 1',
         rocketFeatures: {
             height: {
-                meters: 0
-            }
+                meters: 0,
+                feet: 0
+            },
+            diameter: {
+                meters: 0,
+                feet: 0
+            },
+            mass: {
+                kg: 0,
+                lb: 0
+            },
+            payload_weights: [{
+                kg: 0,
+                lb: 0
+            }],
+            description: '',
         },
         rockets: [],
     }
