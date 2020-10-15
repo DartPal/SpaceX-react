@@ -1,9 +1,20 @@
 import React from "react";
 import './Features.css'
 import falcon1 from '../../img/falcon-1.png'
+import falcon9 from '../../img/falcon-9.png'
+import falconHeavy from '../../img/falcon-heavy.png'
+import starship from '../../img/starship.png'
 import RellaxWrapper from "react-rellax-wrapper";
 
-const Features = () => {
+
+const rocketImage = {
+    'Falcon 1': falcon1,
+    'Falcon 9': falcon9,
+    'Falcon Heavy': falconHeavy,
+    'Starship': starship,
+}
+
+const Features = ({rocketName}) => {
     return (
         <section className="features">
             <h2 className="features-title">
@@ -36,7 +47,7 @@ const Features = () => {
                 </table>
                 <RellaxWrapper speed={14}>
                     <img
-                        src={falcon1}
+                        src={rocketImage.hasOwnProperty(rocketName)? rocketImage[rocketName] : rocketImage.other}
                         alt="rocket"
                         className="rocket"
                     />
