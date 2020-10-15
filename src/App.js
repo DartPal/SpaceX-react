@@ -32,6 +32,7 @@ class App extends React.Component{
             .then(rocketFeatures => this.setState({rocketFeatures}));
     }
 
+
     changeRocket = (rocketName) => {
         this.setState({
             rocketName
@@ -39,12 +40,12 @@ class App extends React.Component{
     }
 
   render() {
-        console.log(this.getData.getRocket())
+        console.log(this.state)
       return (
           <>
               <Header rockets={this.state.rockets} changeRocket={this.changeRocket}/>
               <Main rocketName={this.state.rocketName} />
-              <Features rocketName={this.state.rocketName}/>
+              <Features rocketFeatures={this.state.rocketFeatures} rocketName={this.state.rocketName}/>
               <Footer />
           </>
       )

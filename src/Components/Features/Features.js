@@ -14,7 +14,8 @@ const rocketImage = {
     'Starship': starship,
 }
 
-const Features = ({rocketName}) => {
+const Features = ({rocketFeatures, rocketName}) => {
+
     return (
         <section className="features">
             <h2 className="features-title">
@@ -29,7 +30,7 @@ const Features = ({rocketName}) => {
                     <thead>
                     <tr>
                         <td className="table-column">HEIGHT</td>
-                        <td className="table-column">22.25 m / 73 ft</td>
+                        <td className="table-column">{rocketFeatures.height.meters}</td>
                     </tr>
                     <tr>
                         <td className="table-column">DIAMETER</td>
@@ -47,7 +48,7 @@ const Features = ({rocketName}) => {
                 </table>
                 <RellaxWrapper speed={14}>
                     <img
-                        src={rocketImage.hasOwnProperty(rocketName)? rocketImage[rocketName] : rocketImage.other}
+                        src={rocketImage.hasOwnProperty(rocketName) ? rocketImage[rocketName] : rocketImage.other}
                         alt="rocket"
                         className="rocket"
                     />
