@@ -30,19 +30,27 @@ const Features = ({rocketFeatures, rocketName}) => {
                     <thead>
                     <tr>
                         <td className="table-column">HEIGHT</td>
-                        <td className="table-column">{rocketFeatures.height.meters}</td>
+                        <td className="table-column">
+                            {rocketFeatures?.height.meters} m / {rocketFeatures?.height.feet} ft
+                        </td>
                     </tr>
                     <tr>
                         <td className="table-column">DIAMETER</td>
-                        <td className="table-column">1.68 m / 5.5 ft</td>
+                        <td className="table-column">
+                            {rocketFeatures?.diameter.meters} m / {rocketFeatures?.diameter.feet} ft
+                        </td>
                     </tr>
                     <tr>
                         <td className="table-column">MASS</td>
-                        <td className="table-column">30,146 kg / 66,460 lb</td>
+                        <td className="table-column">
+                            {rocketFeatures?.mass.kg} kg / {rocketFeatures?.mass.lb} lb
+                        </td>
                     </tr>
                     <tr>
                         <td className="table-column">PAYLOAD TO LEO</td>
-                        <td className="table-column">450 kg / 992 lb</td>
+                        <td className="table-column">
+                            {rocketFeatures?.payload_weights[0].kg} kg / {rocketFeatures?.payload_weights[0].lb} lb
+                        </td>
                     </tr>
                     </thead>
                 </table>

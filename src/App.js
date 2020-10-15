@@ -39,8 +39,9 @@ class App extends React.Component{
         }, this.updateRocket)
     }
 
-  render() {
-        console.log(this.state)
+
+    render() {
+        console.log(this.state.rocketFeatures)
       return (
           <>
               <Header rockets={this.state.rockets} changeRocket={this.changeRocket}/>
