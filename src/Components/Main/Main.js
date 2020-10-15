@@ -18,16 +18,16 @@ const Main = ({rocketName}) => {
     return (
         <section className="main">
             <h1 className="title">
-                {rocketName}
+                {rocketName ? rocketName: 'Календарь SpaceX'}
             </h1>
-            <div className="video-container">
+            {rocketName && <div className="video-container">
                 <video
                     className="video"
                     autoPlay
                     loop
                     muted
                     src={video.hasOwnProperty(rocketName)? video[rocketName] : video.other} />
-            </div>
+            </div>}
         </section>
     )
 }

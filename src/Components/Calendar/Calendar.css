@@ -11,5 +11,16 @@
 }
 
 .calendar-item {
+    text-align: center;
     margin: 15px;
+    border: 2px solid #ffffff;
+    padding: 20px;
+    padding-bottom: 40px;
+    border-radius: 6px;
+}
+
+.launches-title {
+    text-align: left;
+    margin-bottom: 40px;
+    margin-top: 10px;
 }
