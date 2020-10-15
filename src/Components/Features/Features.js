@@ -30,7 +30,7 @@ const Features = ({rocketFeatures, rocketName}) => {
                     <thead>
                     <tr>
                         <td className="table-column">HEIGHT</td>
-                        <td className="table-column">{rocketFeatures?.height.meters}</td>
+                        <td className="table-column">{rocketFeatures.height.meters}</td>
                     </tr>
                     <tr>
                         <td className="table-column">DIAMETER</td>

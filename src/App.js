@@ -14,7 +14,11 @@ class App extends React.Component{
 
     state = {
         rocketName: 'Falcon 1',
-        rocketFeatures: null,
+        rocketFeatures: {
+            height: {
+                meters: 0
+            }
+        },
         rockets: [],
     }
 
