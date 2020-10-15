@@ -18,6 +18,6 @@ export default class GetData {
     getLaunches = async () =>
         await this.getData(this.startUrl + 'launches/past');
 
-    getCompanies = async () =>
+    getCompany = async () =>
         await this.getData(this.startUrl + 'company');
 }

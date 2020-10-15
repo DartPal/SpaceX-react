@@ -5,6 +5,7 @@ import Features from "./Components/Features/Features";
 import Footer from "./Components/Footer/Footer";
 import Details from "./Components/Details/Details";
 import Calendar from "./Components/Calendar/Calendar";
+import Home from "./Components/Home/Home"
 import GetData from "./getdata/GetData";
 import './style.css'
 
@@ -34,11 +35,14 @@ class App extends React.Component{
             description: '',
         },
         rockets: [],
+        company: null
     }
 
     componentDidMount() {
         this.updateRocket();
+        this.updateCompany();
     }
+
 
     updateRocket() {
         this.getData.getRocket()
@@ -51,21 +55,29 @@ class App extends React.Component{
     }
 
 
+
+
+
+
+    updateCompany = () => {
+        this.getData.getCompany()
+            .then(company => this.setState({ company }))
+    }
+
     changeRocket = (rocketName) => {
         this.setState({
             rocketName
         }, this.updateRocket)
     }
 
-
     render() {
-        console.log(this.state.rocketFeatures)
       return (
           <>
               <Header rockets={this.state.rockets} changeRocket={this.changeRocket}/>
-              <Main rocketName={this.state.rocketName} />
-              <Features rocketFeatures={this.state.rocketFeatures} rocketName={this.state.rocketName}/>
-              <Footer />
+              {this.state.company && <Home company={this.state.company} />}
+              {/*<Main rocketName={this.state.rocketName} />*/}
+              {/*<Features rocketFeatures={this.state.rocketFeatures} rocketName={this.state.rocketName}/>*/}
+              {this.state.company && <Footer {...this.state.company} />}
           </>
       )
   }
