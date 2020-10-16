@@ -7,7 +7,7 @@ import './Header.css'
 const Header = (props) => {
     return (
         <header className="header">
-                <Link to='/'>
+                <Link to='/SpaceX-react'>
                     <img
                         src={logo}
                         alt="Logo Space X"
