@@ -71,7 +71,7 @@ class App extends React.Component{
           <BrowserRouter>
               <Header rockets={this.state.rockets} changeRocket={this.changeRocket}/>
 
-              <Route exact path='/'>
+              <Route exact path='/SpaceX-react/'>
                   {this.state.company && <Home company={this.state.company} />}
               </Route>
 
