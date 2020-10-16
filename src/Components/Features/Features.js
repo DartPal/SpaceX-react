@@ -5,6 +5,7 @@ import falcon9 from '../../img/falcon-9.png'
 import falconHeavy from '../../img/falcon-heavy.png'
 import starship from '../../img/starship.png'
 import RellaxWrapper from "react-rellax-wrapper";
+import Main from "../Main/Main";
 
 
 const rocketImage = {
@@ -17,7 +18,9 @@ const rocketImage = {
 const Features = ({rocketFeatures, rocketName}) => {
 
     return (
-        <section className="features">
+        <>
+            <Main rocketName={rocketName} />
+            <section className="features">
                 <h2 className="features-title">
                     {rocketName} <br/>Overview
                 </h2>
@@ -69,6 +72,7 @@ const Features = ({rocketFeatures, rocketName}) => {
                     </article>
                 </div>
             </section>
+        </>
     )
 }
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import {BrowserRouter, Route} from "react-router-dom";
 import Header from './Components/Header/Header'
-import Main from './Components/Main/Main';
 import Features from "./Components/Features/Features";
 import Footer from "./Components/Footer/Footer";
 import Details from "./Components/Details/Details";
@@ -9,6 +8,8 @@ import Calendar from "./Components/Calendar/Calendar";
 import Home from "./Components/Home/Home";
 import GetData from "./getdata/GetData";
 import './style.css';
+
+
 
 class App extends React.Component{
 
@@ -74,18 +75,15 @@ class App extends React.Component{
                   {this.state.company && <Home company={this.state.company} />}
               </Route>
 
-              <Route path='/rocket'>
-                  <Main rocketName={this.state.rocketName} />
-                  <Features rocketFeatures={this.state.rocketFeatures} rocketName={this.state.rocketName}/>
-              </Route>
+              <Route
+                  path='/rocket'
+                  render={() => <Features
+                      rocketFeatures={this.state.rocketFeatures}
+                      rocketName={this.state.rocketName}/>} />
 
-              <Route path='/calendar'>
-                  <Calendar />
-              </Route>
+              <Route path='/calendar' component={Calendar} />
 
-              <Route path='/details'>
-                  <Details />
-              </Route>
+              <Route path='/details/:id' component={Details} />
 
               {this.state.company && <Footer {...this.state.company} />}
           </BrowserRouter>

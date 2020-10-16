@@ -13,12 +13,12 @@ const video = {
     other: spaceVideo,
 }
 
-const Main = ({rocketName}) => {
+const Main = ({rocketName, name}) => {
 
     return (
         <section className="main">
             <h1 className="title">
-                {rocketName ? rocketName: 'Календарь SpaceX'}
+                {rocketName ? rocketName: name}
             </h1>
             {rocketName && <div className="video-container">
                 <video
