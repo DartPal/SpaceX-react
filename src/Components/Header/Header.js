@@ -7,7 +7,7 @@ import './Header.css'
 const Header = (props) => {
     return (
         <header className="header">
-                <Link to='/SpaceX-react'>
+                <Link to='/SpaceX-react/'>
                     <img
                         src={logo}
                         alt="Logo Space X"
@@ -32,7 +32,7 @@ const Header = (props) => {
                 <nav className="secondary-nav">
                     <ul className="list">
                         <li className="item">
-                            <NavLink exact to='/' className="item-link" activeClassName='active'>Home</NavLink>
+                            <NavLink exact to='/SpaceX-react/' className="item-link" activeClassName='active'>Home</NavLink>
                         </li>
                         <li className="item">
                             <NavLink to='/calendar' className="item-link" activeClassName='active'>Calendar</NavLink>
