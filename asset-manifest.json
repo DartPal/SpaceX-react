@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/SpaceX-react/static/css/main.2297a858.chunk.css",
+    "main.js": "/SpaceX-react/static/js/main.721b3887.chunk.js",
+    "main.js.map": "/SpaceX-react/static/js/main.721b3887.chunk.js.map",
+    "runtime-main.js": "/SpaceX-react/static/js/runtime-main.91d4e490.js",
+    "runtime-main.js.map": "/SpaceX-react/static/js/runtime-main.91d4e490.js.map",
+    "static/js/2.629dd2a5.chunk.js": "/SpaceX-react/static/js/2.629dd2a5.chunk.js",
+    "static/js/2.629dd2a5.chunk.js.map": "/SpaceX-react/static/js/2.629dd2a5.chunk.js.map",
+    "index.html": "/SpaceX-react/index.html",
+    "precache-manifest.91275422dc6f0c48b25a8d8819e1afa7.js": "/SpaceX-react/precache-manifest.91275422dc6f0c48b25a8d8819e1afa7.js",
+    "service-worker.js": "/SpaceX-react/service-worker.js",
+    "static/css/main.2297a858.chunk.css.map": "/SpaceX-react/static/css/main.2297a858.chunk.css.map",
+    "static/js/2.629dd2a5.chunk.js.LICENSE.txt": "/SpaceX-react/static/js/2.629dd2a5.chunk.js.LICENSE.txt",
+    "static/media/earth.mp4": "/SpaceX-react/static/media/earth.6160d272.mp4",
+    "static/media/falcon-1.png": "/SpaceX-react/static/media/falcon-1.4e43f38e.png",
+    "static/media/falcon-9.png": "/SpaceX-react/static/media/falcon-9.70c0d6ca.png",
+    "static/media/falcon-heavy.png": "/SpaceX-react/static/media/falcon-heavy.c1e42c98.png",
+    "static/media/logo.svg": "/SpaceX-react/static/media/logo.d5ab31ce.svg",
+    "static/media/mars.mp4": "/SpaceX-react/static/media/mars.50a0c445.mp4",
+    "static/media/moon.mp4": "/SpaceX-react/static/media/moon.c576729b.mp4",
+    "static/media/space.mp4": "/SpaceX-react/static/media/space.7a69e904.mp4",
+    "static/media/starship.png": "/SpaceX-react/static/media/starship.9502c370.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.91d4e490.js",
+    "static/js/2.629dd2a5.chunk.js",
+    "static/css/main.2297a858.chunk.css",
+    "static/js/main.721b3887.chunk.js"
+  ]
+}
